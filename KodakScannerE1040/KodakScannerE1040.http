@@ -1,0 +1,6 @@
+@KodakScannerE1040_HostAddress = http://localhost:5093
+
+GET {{KodakScannerE1040_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

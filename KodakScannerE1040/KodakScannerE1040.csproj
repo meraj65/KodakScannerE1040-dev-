@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>4</VersionMinor>
+			<VersionMajor>2</VersionMajor>
+			<Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+		</COMReference>
+		<COMReference Include="WIA">
+		  <WrapperTool>tlbimp</WrapperTool>
+		  <VersionMinor>0</VersionMinor>
+		  <VersionMajor>1</VersionMajor>
+		  <Guid>94a0e92d-43c0-494e-ac29-fd45948a5221</Guid>
+		  <Lcid>0</Lcid>
+		  <Isolated>false</Isolated>
+		  <EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GdPicture" Version="14.3.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.1" />
+		<PackageReference Include="NTwain" Version="3.7.5" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<PackageReference Include="System.CodeDom" Version="9.0.2" />
+		<PackageReference Include="System.Management" Version="9.0.2" />
+		<PackageReference Include="TwainDotNet" Version="1.0.0" />
+	</ItemGroup>
+
+		
+
+</Project>
