@@ -1,10 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
+		<!-- <TargetFramework>net8.0-windows</TargetFramework> -->
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		
+    <EnableComHosting>true</EnableComHosting>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+	
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -26,13 +33,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="GdPicture" Version="14.3.1" />
-		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.1" />
-		<PackageReference Include="NTwain" Version="3.7.5" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-		<PackageReference Include="System.CodeDom" Version="9.0.2" />
-		<PackageReference Include="System.Management" Version="9.0.2" />
-		<PackageReference Include="TwainDotNet" Version="1.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.1" />
 	</ItemGroup>
 
 		
